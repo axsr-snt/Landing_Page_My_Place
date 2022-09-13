@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+html {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;    
+}
+
+/* ****************************** header *********************************** */
+
+header {
+    background-color: transparent;
+    width: 100%;
+    height: 80px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.header-title {
+    font-size: 1.9rem;
+    color: azure;
+    text-shadow: 1px 1px 2px cyan;
+}
+
+
+
+.header-nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.header-nav ul li {
+    margin: 0 15px;
+}
+
+.header-nav a {
+    padding: 0 15px;
+    font-size: .9rem;
+    font-weight: 700;
+    color: azure;
+    text-align: center;
+    transition: .2s;
+}
+
+.header-nav a:hover {
+    font-size: 1rem;
+    border-bottom: 2px solid cyan;
+    color: cyan;
+}
+
+.nav-scroll {
+    background-color: rgba(41, 41, 41, 0.80);
+}
+
+/* ****************************** fim header *********************************/
+
+
+/* ****************************** main-cover *********************************/
+.main-cover {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,0)), url(../image/pexels-felix-mittermeier-957002.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    text-align: center;
+    color: azure;
+}
+
+.main-cover h2, h3 {
+    margin-bottom: 2rem;
+    font-size: 3vmin;
+}
+
+.div-link {
+    width: 100%;
+    height: 150px;
+}
+
+.main-cover a {
+    color: azure;
+    border-radius: 45px;
+    padding: 5px 20px;
+    font-weight: 500;
+    font-size: 2.2vmin;
+    background-color: #dc143c;
+    transition: .2s;
+    
+}
+
+.main-cover a:hover {
+    font-weight: 700;
+    font-size: 2.3vmin;
+}
+
+/* **************************** fim main-cover *******************************/
+
+
+/********************************** sections ********************************/
+
+.sections {
+    width: 100%;
+    min-height: 100vh;
+    padding: 40px 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-title{
+    margin-bottom: 20px;
+    font-size: 3vmin;
+    text-align: center;
+}
+
+.line {
+    width: 150px;
+    height: 2px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: cyan;
+}
+
+.mountain-content {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.itens {
+    width: 80%;
+    height: 80%;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.itens img {
+    width: 80%;
+    transition: 0.3s;
+}
+
+.itens img:hover {
+    transform: scale(1.1);
+}
+
+.mountain-content p {
+    padding: 10px 0;
+    font-size: 2vmin;
+}
+.mountain-content a {
+    width: 200px;
+    margin: 10px 0;
+    border: 1px solid #dc143c;
+    border-radius: 45px;
+    padding: 5px 20px;
+    font-weight: 500;
+    font-size: 2.3vmin;
+    background-color: #dc143c;
+    color: azure;
+    transition: .3s;
+}
+
+.mountain-content a:hover {
+    border: 2px solid #dc143c;
+    font-weight: 700;
+    font-size: 2.4vmin; 
+}
+
+@media screen and (min-width: 980px) {
+
+    .mountain-content {
+        margin: 0 auto;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+    
+    .itens {
+        width: 40%;
+        text-align: center;
+    }
+
+    .itens p {
+        min-height: 250px;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+
+    .mountain-content {
+        margin: 0 auto;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+    
+    .itens {
+        width: 40%;
+        text-align: center;
+    }
+
+    .itens p {
+        min-height: 225px;
+    }
+}
+
+/****************************** fim sections ********************************/
+
+
+/******************************** sections **********************************/
+
+#explore {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0)) ,url(../image/pexels-kleber-m-ortiz-4028995.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.explore-content {
+    width: 30%;
+    margin-left: 50px;
+    color: azure;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.line-2 {
+    width: 100%;
+    height: 2px;
+    margin-bottom: 20px;
+    border-radius: 45px;
+    background-color: cyan;
+}
+
+.explore-content p {
+    min-width: 250px;
+    min-height: 250px;
+    margin-top: 20px;
+}
+
+.explore-content a {
+    border: 1px solid #dc143c;
+    border-radius: 45px;
+    padding: 5px 20px;
+    font-weight: 500;
+    font-size: 2.3vmin;
+    background-color: #dc143c;
+    color: azure;
+    font-weight: 500;
+    transition: .3s;
+
+}
+
+.explore-content a:hover {
+    border: 2px solid #dc143c;
+    font-weight: 700;
+    font-size: 2.4vmin;
+}
+
+/****************************** fim sections ********************************/
